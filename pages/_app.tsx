@@ -1,10 +1,10 @@
-import "../styles/theme";
 import type { AppProps } from "next/app";
 import { ThemeProvider } from "@mui/material";
 import React from "react";
 import Head from "next/head";
-import theme from "../styles/theme";
 import CssBaseline from "@mui/material/CssBaseline"; // reset
+import theme from "@styles/theme";
+import Header from "@components/Header";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -19,6 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <Header />
         <Component {...pageProps} />
       </ThemeProvider>
     </React.StrictMode>
