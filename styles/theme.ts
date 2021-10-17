@@ -1,21 +1,11 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
+import { blue, indigo } from "@mui/material/colors";
 
+// Create a theme instance.
 let theme = createTheme({
   palette: {
-    primary: {
-      main: "#0052cc",
-    },
-    secondary: {
-      main: "#edf2ff",
-    },
-  },
-});
-
-theme = createTheme(theme, {
-  palette: {
-    info: {
-      main: theme.palette.secondary.main,
-    },
+    primary: blue,
+    secondary: indigo,
   },
 });
 
